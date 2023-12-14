@@ -10,7 +10,7 @@ import org.testng.annotations.Listeners;
 public abstract class TestBase {
 
     @BeforeMethod
-    public abstract void setUp();
+    public abstract void setUp() throws InterruptedException;
 
     @AfterMethod
     public void tearDown(){
