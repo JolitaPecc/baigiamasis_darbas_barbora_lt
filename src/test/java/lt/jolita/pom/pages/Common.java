@@ -27,6 +27,10 @@ public class Common {
         Driver.getDriver().get(url);
     }
 
+    public static void goToUrl(String url) {
+        Driver.getDriver().navigate().to(url);
+    }
+
     public static void closeWindow() {
         Driver.closeDriver();
     }
