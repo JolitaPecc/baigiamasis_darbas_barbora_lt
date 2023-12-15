@@ -10,7 +10,7 @@ public class LoginPage {
     }
 
     public static void closeCookiePopup() {
-        Common.clickOnElement(Locator.Barbora.Login.cookiebotDialogOkButton);
+        Common.clickOnElement(Locator.Barbora.Login.cookieBotDialogOkButton);
     }
 
     public static void clickOnPrisijungti() {

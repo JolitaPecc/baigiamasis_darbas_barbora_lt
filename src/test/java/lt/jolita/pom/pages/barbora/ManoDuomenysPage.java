@@ -10,12 +10,11 @@ public class ManoDuomenysPage {
     }
 
     public static void goToUrl(String url) {
-//        Common.setUpChrome();
         Common.goToUrl(url);
     }
 
     public static void closeCookiePopup() {
-        Common.clickOnElement(Locator.Barbora.Login.cookiebotDialogOkButton);
+        Common.clickOnElement(Locator.Barbora.Login.cookieBotDialogOkButton);
     }
 
     public static void doLogin() {

@@ -15,8 +15,7 @@ public class Driver {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
         ChromeOptions option = new ChromeOptions();
-//        option.addArguments("--remote-allow-origins=*");
-//        option.addArguments("--headless=new");
+        option.addArguments("--headless=new");
         option.addArguments("start-maximized");
         option.addArguments("--force-device-scale-factor=0.70");
         option.addArguments();
@@ -30,13 +29,7 @@ public class Driver {
         return driver.get();
     }
 
-    public static void closeDriver(){
-
-        driver.get().close(); // uzdarys atidaryta taba
-    }
-
     public static void quitDriver(){
-//        driver.quit(); // uzdarys viska, ka atidare, visus langus
         driver.get().quit();
         driver.remove();
     }

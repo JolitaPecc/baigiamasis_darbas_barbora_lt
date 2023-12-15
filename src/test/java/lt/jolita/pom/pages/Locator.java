@@ -6,7 +6,7 @@ public class Locator {
     public static class Barbora {
 
         public static class Login {
-            public static By cookiebotDialogOkButton =
+            public static By cookieBotDialogOkButton =
                     By.xpath("//a[@id='CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll']");
             public static By buttonPrisijungti =
                     By.xpath("//button[@id='fti-header-login']");

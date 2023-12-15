@@ -10,7 +10,7 @@ public class ReceptaiPage {
     }
 
     public static void closeCookiePopup() {
-        Common.clickOnElement(Locator.Barbora.Login.cookiebotDialogOkButton);
+        Common.clickOnElement(Locator.Barbora.Login.cookieBotDialogOkButton);
     }
 
     public static void doLogin() {
@@ -22,8 +22,6 @@ public class ReceptaiPage {
         LoginPage.writePassword(myPassword);
         LoginPage.clickOnLoginSubmit();
     }
-
-
 
     public static void enterRecipeName(String myRecipeName) {
         ReceptaiPage.writeRecipeName(myRecipeName);
