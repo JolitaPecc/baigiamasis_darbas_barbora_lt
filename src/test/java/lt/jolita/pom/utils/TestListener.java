@@ -30,7 +30,7 @@ public class TestListener implements ITestListener {
         }
     }
 
-    @Override // cttrl + I -> on test failue
+    @Override
     public void onTestFailure(ITestResult result) {
         takeScreenshot();
     }
