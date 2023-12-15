@@ -71,3 +71,14 @@ atliko: Jolita Pečiokienė
 >Lauktas rezultatas: atsirado užrašas "Jūsų AČIŪ kortelės numeris:".
 
 ### TC06. Pašalinu Ačiū kortelės duomenis iš paskyros.
+1.  Atidarau naršyklę ir el. psl. [barbora.lt](https://www.barbora.lt) _(setUp() metodas)_
+2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką
+   "Leisti visus slapukus". _(setUp() metodas)_
+3. Prisijungiu prie paskyros. _(setUp() metodas)_
+4. Palaukiu, kol užsikraus elementai. _(setUp() metodas)_
+5. Užeinu į puslapį [https://www.barbora.lt/mano-duomenys/mano-aciu-kortele](https://www.barbora.lt/mano-duomenys/mano-aciu-kortele) _(setUp() metodas)_
+6. Paspaudžiu mygtuką "X", kad pašalinčiau Ačiū kortelės duomenis iš paskytos.
+7. Iššokusiame lange paspaudžiu sutikimo mygtuką pašalinti kortelės duomenis iš paskyros.
+8. Atsinaujinusiame lange nuskaitau pranešimą "Ačiū kortelė pašalinta."
+>Gautas rezultatas: atsirado pranešimas "Ačiū kortelė pašalinta.".<br>
+>Lauktas rezultatas: tsirado pranešimas "Ačiū kortelė pašalinta.".
