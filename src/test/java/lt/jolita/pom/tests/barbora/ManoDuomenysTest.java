@@ -2,7 +2,6 @@ package lt.jolita.pom.tests.barbora;
 
 import lt.jolita.pom.pages.barbora.ManoDuomenysPage;
 import lt.jolita.pom.tests.TestBase;
-import lt.jolita.pom.utils.Driver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,14 +20,14 @@ public class ManoDuomenysTest extends TestBase {
     @Test
     public void testAddAciuCardDetailsToAccount() {
         String aciuCardNumber = "9440003700816017447";
-        String expectedResult = "Jūsų AČIŪ kortelės numeris";
+        String expectedResult = "Jūsų AČIŪ kortelės numeris:";
         String actualResult;
 
+        ManoDuomenysPage.writeAciuCardIdIntoField(aciuCardNumber);
+        ManoDuomenysPage.pushButtonAddAciuCard();
 
+        actualResult = ManoDuomenysPage.readMessageAboutMyCard();
 
-
-//        actualResult = "";
-//
-//        Assert.assertEquals(actualResult, expectedResult);
+        Assert.assertEquals(actualResult, expectedResult);
     }
 }

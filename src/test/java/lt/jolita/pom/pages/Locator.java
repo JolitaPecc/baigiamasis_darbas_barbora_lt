@@ -38,5 +38,12 @@ public class Locator {
             public static By clickReceptai =
                     By.xpath("//a[@class='desktop-menu--item ']//span[contains(text(),'Receptai')]");
         }
+
+        public class ManoDuomenys {
+            public static By enterAciuCardNumber =
+                    By.xpath("//input[@class='b-text-overflow-ellipsis--text']");
+            public static By pushButtonAddCard = By.xpath("//button[@type='submit']");
+            public static By statusOfMyCard = By.xpath("//h1[@class='content-block--item']");
+        }
     }
 }

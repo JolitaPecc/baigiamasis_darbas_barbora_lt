@@ -36,4 +36,16 @@ public class ManoDuomenysPage {
             Common.checkIfElementVisible(Locator.Barbora.Receptai.clickReceptai);
         }
     }
+
+    public static void writeAciuCardIdIntoField(String aciuCardNumber) {
+        Common.addText(Locator.Barbora.ManoDuomenys.enterAciuCardNumber, aciuCardNumber);
+    }
+
+    public static void pushButtonAddAciuCard() {
+        Common.clickOnElement(Locator.Barbora.ManoDuomenys.pushButtonAddCard);
+    }
+
+    public static String readMessageAboutMyCard() {
+        return Common.getText(Locator.Barbora.ManoDuomenys.statusOfMyCard);
+    }
 }
