@@ -57,4 +57,17 @@ atliko: Jolita Pečiokienė
 >Gautas rezultatas: atsirado mygtukas "pirkti".<br>
 >Lauktas rezultatas: atsirado mygtukas "pirkti".
 
-### TC05
+### TC05. Pridedu Ačiū kortelės duomenis į paskyrą.
+1.  Atidarau naršyklę ir el. psl. [barbora.lt](https://www.barbora.lt) _(setUp() metodas)_
+2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką
+   "Leisti visus slapukus". _(setUp() metodas)_
+3. Prisijungiu prie paskyros. _(setUp() metodas)_
+4. Palaukiu, kol užsikraus elementai. _(setUp() metodas)_
+5. Užeinu į puslapį [https://www.barbora.lt/mano-duomenys/mano-aciu-kortele](https://www.barbora.lt/mano-duomenys/mano-aciu-kortele) _(setUp() metodas)_
+6. Įvedu AČIŪ kortelės duomenis (9440003700816017447) į nurodytą langelį.
+7. Spaudžiu mygtuką pridėti.
+8. Nuskaitau užrašą "Jūsų AČIŪ kortelės numeris:"
+>Gautas rezultatas: atsirado užrašas "Jūsų AČIŪ kortelės numeris:".<br>
+>Lauktas rezultatas: atsirado užrašas "Jūsų AČIŪ kortelės numeris:".
+
+### TC06. Pašalinu Ačiū kortelės duomenis iš paskyros.
