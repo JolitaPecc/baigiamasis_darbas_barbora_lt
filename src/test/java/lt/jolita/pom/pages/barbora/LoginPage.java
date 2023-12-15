@@ -33,7 +33,7 @@ public class LoginPage {
         return Common.getText(Locator.Barbora.Login.myCart);
     }
 
-    public static void doLigin() throws InterruptedException {
+    public static void doLogin() throws InterruptedException {
         String myEmail = "peciokiene.jolita@gmail.com";
         String myPassword = "Oranzinis5";
 
@@ -43,9 +43,22 @@ public class LoginPage {
         LoginPage.writeEmail(myEmail);
         LoginPage.writePassword(myPassword);
         LoginPage.clickOnLoginSubmit();
+        Thread.sleep(3000);
     }
 
     public static String readErrorMessage() {
         return Common.getText(Locator.Barbora.Login.errorMessage);
+    }
+
+    public static void searchForGoods(String searchFor) {
+        Common.addText(Locator.Barbora.Login.sewarchBar, searchFor);
+    }
+
+    public static void initiateSearch() {
+        Common.clickOnElement(Locator.Barbora.Login.clickSearchButton);
+    }
+
+    public static String readResultsFound() {
+        return Common.getText(Locator.Barbora.Login.searchResults);
     }
 }

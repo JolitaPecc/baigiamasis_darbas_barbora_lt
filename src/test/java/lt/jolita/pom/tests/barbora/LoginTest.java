@@ -10,7 +10,7 @@ public class LoginTest extends TestBase {
 
     @Override
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         LoginPage.openUrl("https://www.barbora.lt/");
         LoginPage.closeCookiePopup();
     }
@@ -23,11 +23,10 @@ public class LoginTest extends TestBase {
         String actualResult;
 
         LoginPage.clickOnPrisijungti();
-        Thread.sleep(3000);
+//        Thread.sleep(3000);
         LoginPage.writeEmail(myEmail);
         LoginPage.writePassword(myPassword);
         LoginPage.clickOnLoginSubmit();
-
         actualResult = LoginPage.readCartContentIsZero();
 
         Assert.assertTrue(
@@ -47,7 +46,6 @@ public class LoginTest extends TestBase {
         LoginPage.writeEmail(myEmail);
         LoginPage.writePassword(myPassword);
         LoginPage.clickOnLoginSubmit();
-
         String actualResult = LoginPage.readErrorMessage();
 
         Assert.assertTrue(
@@ -56,4 +54,20 @@ public class LoginTest extends TestBase {
         );
     }
 
+    @Test
+    public void testSearchBarForProductMajonezas() throws InterruptedException {
+        String searchFor = "majonezas";
+        String expectedResult = "majonezas";
+        String actualResult;
+
+        LoginPage.doLogin();
+        LoginPage.searchForGoods(searchFor);
+        LoginPage.initiateSearch();
+        actualResult = LoginPage.readResultsFound();
+
+        Assert.assertTrue(
+                actualResult.contains(expectedResult),
+                "\nExpected: %s, \nActual: %s".formatted(expectedResult, actualResult)
+        );
+    }
 }

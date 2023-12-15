@@ -17,6 +17,9 @@ public class Locator {
             public static By myCart = By.xpath("(//button[@id='fti-cart-delivery']//span)[2]");
 
             public static By errorMessage = By.xpath("//div[@class='b-alert b-alert--error']");
+            public static By sewarchBar = By.xpath("(//input[@id='fti-search'])[2]");
+            public static By clickSearchButton = By.xpath("(//button[@id='fti-initiate-search'])[2]");
+            public static By searchResults = By.xpath("//div[@id='search-results-placeholder']");
         }
     }
 }

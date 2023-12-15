@@ -35,4 +35,4 @@ atliko: Jolita Pečiokienė
 1. Atidarau naršyklę ir el. psl. barbora.lt. _(setUp() metodas)_
 2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką
    "Leisti visus slapukus". _(setUp() metodas)_
-3. 
+3. Prisijungiu prie paskyros.
