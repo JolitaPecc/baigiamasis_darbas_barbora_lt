@@ -48,4 +48,16 @@ public class ManoDuomenysPage {
     public static String readMessageAboutMyCard() {
         return Common.getText(Locator.Barbora.ManoDuomenys.statusOfMyCard);
     }
+
+    public static void pushButtonToRemoveAciuCard() {
+        Common.clickOnElement(Locator.Barbora.ManoDuomenys.pushButtonRemoveCard);
+    }
+
+    public static void pushButtonAcceptToRemoveAciuCard() {
+        Common.clickOnElement(Locator.Barbora.ManoDuomenys.pushButtonAcceptRemoveCard);
+    }
+
+    public static String readAlertMessage() {
+        return Common.getText(Locator.Barbora.ManoDuomenys.readAlertMessageText);
+    }
 }

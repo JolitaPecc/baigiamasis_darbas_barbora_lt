@@ -44,6 +44,9 @@ public class Locator {
                     By.xpath("//input[@class='b-text-overflow-ellipsis--text']");
             public static By pushButtonAddCard = By.xpath("//button[@type='submit']");
             public static By statusOfMyCard = By.xpath("//h1[@class='content-block--item']");
+            public static By pushButtonRemoveCard = By.xpath("//button[@id='fti-remove-aciu-card']");
+            public static By pushButtonAcceptRemoveCard = By.xpath("//button[@id='fti-modal-option-1']");
+            public static By readAlertMessageText = By.xpath("//div[@class='modal-body ']");
         }
     }
 }

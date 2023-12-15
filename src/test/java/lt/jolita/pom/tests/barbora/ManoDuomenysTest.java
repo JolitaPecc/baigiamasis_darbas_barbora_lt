@@ -30,4 +30,17 @@ public class ManoDuomenysTest extends TestBase {
 
         Assert.assertEquals(actualResult, expectedResult);
     }
+
+    @Test
+    public void testRemoveAciuCardDetailsFromAccount() {
+        String expectedResult = "Ačiū kortelė pašalinta.";
+        String actualResult;
+
+        ManoDuomenysPage.pushButtonToRemoveAciuCard();
+        ManoDuomenysPage.pushButtonAcceptToRemoveAciuCard();
+
+        actualResult = ManoDuomenysPage.readAlertMessage();
+
+        Assert.assertEquals(actualResult, expectedResult);
+    }
 }
