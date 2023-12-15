@@ -5,7 +5,7 @@ atliko: Jolita Pečiokienė
 [Nuoroda į babrbora.lt svetainę](https://www.barbora.lt/)
 
 ### TC01. Prisijungimas naudojant teisingus duomenis<br>
-1. Atidarau naršyklę ir el. psl. barbora.lt. _(setUp() metodas)_
+1. Atidarau naršyklę ir el. psl. [barbora.lt](https://www.barbora.lt) _(setUp() metodas)_
 2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką 
 "Leisti visus slapukus". _(setUp() metodas)_
 3. Spaudžiu mygtuką "Prisijungti".
@@ -18,7 +18,7 @@ atliko: Jolita Pečiokienė
 >Lauktas rezultatas: pirkinių krepšelio vertė - €0,00.
 
 ### TC02. Prisijungimas naudojant klaidingus duomenis<br>
-1. Atidarau naršyklę ir el. psl. barbora.lt. _(setUp() metodas)_
+1. Atidarau naršyklę ir el. psl. [barbora.lt](https://www.barbora.lt) _(setUp() metodas)_
 2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką
    "Leisti visus slapukus". _(setUp() metodas)_
 3. Spaudžiu mygtuką "Prisijungti".
@@ -32,7 +32,29 @@ atliko: Jolita Pečiokienė
 >Lauktas rezultatas: atsirado įspėjantis pranšimas.
 
 ### TC03. Prekės paieška<br>
-1. Atidarau naršyklę ir el. psl. barbora.lt. _(setUp() metodas)_
+1. Atidarau naršyklę ir el. psl. [barbora.lt](https://www.barbora.lt) _(setUp() metodas)_
 2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką
    "Leisti visus slapukus". _(setUp() metodas)_
-3. Prisijungiu prie paskyros.
+3. Paiškos lange įvedu pavadinimą (majonezas).
+4. Spaudžiu mygtuką "iškoti".
+5. Nuskaitau rezultatus gautame sąraše, ieškau žodžio "majonezas".
+>Gautas rezultatas: atsirado prekių sąrašas su žodžiu "majonezas".<br>
+>Lauktas rezultatas: atsirado prekių sąrašas su žodžiu "majonezas".
+
+### TC04. Noriu sudaryti pirkinių krepšelį pagal rasto recepto ingredientus.
+1.  Atidarau naršyklę ir el. psl. [barbora.lt](https://www.barbora.lt) _(setUp() metodas)_
+2. Uždarau pranešimą apie slapukus, spaudžiu mygtuką
+   "Leisti visus slapukus". _(setUp() metodas)_
+3. Prisijungiu prie paskyros. _(setUp() metodas)_
+4. Palaukiu, kol puslapis "Receptai" taps matomas.
+5. Paspaudžiu "Receptai" mygtuką.
+6.Įvedu norimo recepto pavadinimą (varškės blynai) į receptų paieškos langelį.
+5. Spaudžiu "ieškoti" mygtuką.
+6. Spaudžiu ant recepto.
+7. Užėjus į receptą spaudžiu mygtuką "pirkti ingredientus".
+8. Iššokusiame lange dar kartą spaudžiu mygtuką "pirkti ingredientus".
+9. Susiformuoja krepšelis, atsiranda mygtukas "pirkti".
+>Gautas rezultatas: atsirado mygtukas "pirkti".<br>
+>Lauktas rezultatas: atsirado mygtukas "pirkti".
+
+### TC05
