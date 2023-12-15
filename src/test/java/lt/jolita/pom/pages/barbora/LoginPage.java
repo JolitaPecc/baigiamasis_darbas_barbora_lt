@@ -33,19 +33,6 @@ public class LoginPage {
         return Common.getText(Locator.Barbora.Login.myCart);
     }
 
-    public static void doLogin() throws InterruptedException {
-        String myEmail = "peciokiene.jolita@gmail.com";
-        String myPassword = "Oranzinis5";
-
-
-        LoginPage.clickOnPrisijungti();
-        Thread.sleep(3000);
-        LoginPage.writeEmail(myEmail);
-        LoginPage.writePassword(myPassword);
-        LoginPage.clickOnLoginSubmit();
-        Thread.sleep(3000);
-    }
-
     public static String readErrorMessage() {
         return Common.getText(Locator.Barbora.Login.errorMessage);
     }

@@ -16,14 +16,13 @@ public class LoginTest extends TestBase {
     }
 
     @Test
-    public void testPositiveLogin() throws InterruptedException {
+    public void testPositiveLogin(){
         String myEmail = "peciokiene.jolita@gmail.com";
         String myPassword = "Oranzinis5";
         String expectedResult = "€0,00";
         String actualResult;
 
         LoginPage.clickOnPrisijungti();
-//        Thread.sleep(3000);
         LoginPage.writeEmail(myEmail);
         LoginPage.writePassword(myPassword);
         LoginPage.clickOnLoginSubmit();
@@ -36,13 +35,12 @@ public class LoginTest extends TestBase {
     }
 
     @Test
-    public void testLoginNegative() throws InterruptedException {
+    public void testLoginNegative(){
         String myEmail = "jolita@gmail.co";
         String myPassword = "Oran";
         String expectedResult = "Neteisingas";
 
         LoginPage.clickOnPrisijungti();
-        Thread.sleep(3000);
         LoginPage.writeEmail(myEmail);
         LoginPage.writePassword(myPassword);
         LoginPage.clickOnLoginSubmit();
@@ -55,12 +53,11 @@ public class LoginTest extends TestBase {
     }
 
     @Test
-    public void testSearchBarForProductMajonezas() throws InterruptedException {
+    public void testSearchBarForProductMajonezas() {
         String searchFor = "majonezas";
         String expectedResult = "majonezas";
         String actualResult;
 
-        LoginPage.doLogin();
         LoginPage.searchForGoods(searchFor);
         LoginPage.initiateSearch();
         actualResult = LoginPage.readResultsFound();
