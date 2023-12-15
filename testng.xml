@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo automation test" parallel="classes" thread-count="2">
+    <test name="All tests">
+        <classes>
+            <class name="lt.jolita.pom.tests.barbora.LoginTest"/>
+            <class name="lt.jolita.pom.tests.barbora.ReceptaiTest"/>
+            <class name="lt.jolita.pom.tests.barbora.ManoDuomenysTest"/>
+        </classes>
+    </test>
+</suite>
