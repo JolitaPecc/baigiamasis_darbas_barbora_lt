@@ -38,7 +38,7 @@ public class LoginPage {
     }
 
     public static void searchForGoods(String searchFor) {
-        Common.addText(Locator.Barbora.Login.sewarchBar, searchFor);
+        Common.addText(Locator.Barbora.Login.searchBar, searchFor);
     }
 
     public static void initiateSearch() {

@@ -75,4 +75,31 @@ public class Common {
     public static void swichToDefaultContent() {
         Driver.getDriver().switchTo().defaultContent();
     }
+
+    public static boolean waitForElementToBeVisibleCustomised(By locator, int seconds) {
+        boolean isVisible;
+        int duration = 0;
+        do {
+            try {
+                Thread.sleep(500);
+                isVisible = getElement(locator).isDisplayed();;
+            } catch (NoSuchElementException e) {
+                isVisible = false;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                return false;
+            }
+            duration++;
+        } while (!isVisible || duration / 2 >= seconds);
+
+        return isVisible;
+    }
+
+    public static boolean checkIfElementVisible(By locator) {
+        try {
+            return getElement(locator).isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
 }
